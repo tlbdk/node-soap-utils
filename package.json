@@ -1,0 +1,27 @@
+{
+  "name": "soap-utils",
+  "version": "1.0.0",
+  "description": "SOAP/WSDL utils for node",
+  "main": "index.js",
+  "dependencies": {
+    "xml-exact": "file:../node-xml-exact"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "libxml-xsd": "^0.5.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlbdk/node-xml-exact.git"
+  },
+  "author": "Troels Liebe Bentsen<tlb@nversion.dk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tlbdk/node-soap-utils/issues"
+  },
+  "homepage": "https://github.com/tlbdk/node-soap-utils#readme"
+}
