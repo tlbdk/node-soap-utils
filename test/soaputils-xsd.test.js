@@ -6,6 +6,9 @@ const xmlExact = require("xml-exact");
 const fs = require("fs");
 const xsd = require("libxml-xsd");
 
+// TODO: Merge with xsdEnvelopeObj so we can validate a full soap message
+// http://stackoverflow.com/questions/24224226/how-to-fix-soapenvenvelope-issue-in-xsd-schema-while-validating-with-soap-reque
+
 describe("Generate sample Request/Response json/xml", () => {
     let wsdlSample = fs.readFileSync(__dirname + "/../examples/StockQuote.wsdl", "utf8");
     let xsdEnvelope = fs.readFileSync(__dirname + "/../examples/soap-envelope.xsd", "utf8");
@@ -26,7 +29,7 @@ describe("Generate sample Request/Response json/xml", () => {
         let sampleXml = soapUtils.generateSoapMessage(sampleObj);
 
         // Validate schema against generated XML
-        let xsdSchema = soapUtils.getXsdSchema(); // TODO: Merge with xsdEnvelopeObj so we can validate a full soap message
+        let xsdSchema = soapUtils.getXsdSchema();
         let schema = xsd.parse(xsdSchema);
         let validationErrors = schema.validate(sampleXml);
         assert.equal(null, validationErrors);

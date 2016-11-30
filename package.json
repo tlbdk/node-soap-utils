@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tlbdk/node-xml-exact.git"
+    "url": "git+https://github.com/tlbdk/soap-utils.git"
   },
   "author": "Troels Liebe Bentsen<tlb@nversion.dk>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tlbdk/node-soap-utils/issues"
+    "url": "https://github.com/tlbdk/soap-utils/issues"
   },
-  "homepage": "https://github.com/tlbdk/node-soap-utils#readme"
+  "homepage": "https://github.com/tlbdk/soap-utils#readme"
 }
