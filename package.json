@@ -1,15 +1,19 @@
 {
-  "name": "soap-utils",
+  "name": "soaputils",
   "version": "1.0.0",
   "description": "SOAP/WSDL utils for node",
   "main": "index.js",
   "dependencies": {
-    "xml-exact": "file:../node-xml-exact"
+    "xmlexact": "https://github.com/tlbdk/node-xmlexact"
   },
   "devDependencies": {
+    "babel-eslint": "^8.0.1",
     "chai": "^3.5.0",
+    "eslint": "^4.9.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-prettier": "^2.3.1",
     "mocha": "^3.2.0",
-    "libxml-xsd": "^0.5.2"
+    "prettier": "^1.7.4"
   },
   "scripts": {
     "test": "mocha"
