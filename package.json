@@ -2,7 +2,7 @@
   "name": "soaputils",
   "version": "1.0.0",
   "description": "SOAP/WSDL utils for node",
-  "main": "index.js",
+  "main": "src/soaputils.js",
   "dependencies": {
     "xmlexact": "https://github.com/tlbdk/node-xmlexact"
   },
